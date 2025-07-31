@@ -1,0 +1,31 @@
+.navbar-size {
+width: 95%;
+margin: 0 auto;
+}
+.user-image-size {
+height: 56px;
+margin: 4px 0;
+}
+.main-body {
+    background: linear-gradient(to bottom right, #a0d7e6, #4da0b0, #005f73);
+    color: white;
+    flex: 1;
+    padding: 10px;
+}
+.materialboxed-image {
+margin: 0 auto;
+height: 400px;
+}
+.click-me-button {
+background-color: rgb(68, 133, 114);
+}
+.modal-content {
+    color: black;
+}
+.card-reveal {
+    color: black;
+}
+.page-footer {
+    color: #fff;
+    background-color: rgb(59, 112, 97);
+}
