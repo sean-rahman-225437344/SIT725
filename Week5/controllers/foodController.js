@@ -7,6 +7,6 @@ exports.getAllFood = (req, res) => {
   res.json({
     status: 200,
     data: items,
-    message: 'Food menu retrieved using service'
+    message: 'Burger Menu retrieved using service'
   });
 };
