@@ -6,11 +6,11 @@ const io = require('socket.io')(http);          // Pass http server to socket.io
 var port = 3000;
 app.use(express.static('public'));
 let onlineCount = 0;
+var date=new Date();
 
 // Socket connection logic
 io.on('connection', (socket) => {
   onlineCount++;
-  var date=new Date();
   console.log('A user connected at '+date.toLocaleTimeString());
   console.log('Number of users online:'+onlineCount);
 
