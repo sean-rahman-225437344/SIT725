@@ -6,16 +6,15 @@ const io = require('socket.io')(http);          // Pass http server to socket.io
 var port = 3000;
 app.use(express.static('public'));
 let onlineCount = 0;
-var date=new Date();
 
 // Socket connection logic
 io.on('connection', (socket) => {
   onlineCount++;
-  console.log('A user connected at '+date.toLocaleTimeString());
+  console.log('A user connected');
   console.log('Number of users online:'+onlineCount);
 
   socket.on('disconnect', () => {
-    console.log('User disconnected at '+date.toLocaleTimeString());
+    console.log('User disconnected');
     onlineCount--;
     console.log('Number of users online:'+onlineCount);
   });
